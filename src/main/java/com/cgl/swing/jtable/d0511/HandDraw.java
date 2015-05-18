@@ -37,7 +37,7 @@ public class HandDraw
 	private JFrame f = new JFrame("简单手绘程序");
 	private DrawCanvas drawArea = new DrawCanvas();
 	//用于保存需要绘制什么图形的字符串属性
-	private String shape = "";
+//	private String shape = "";
 	//用于保存画笔颜色
 	private Color foreColor = new Color(255, 0 ,0);
 	public void init()
@@ -113,6 +113,8 @@ public class HandDraw
 	//让画图区域继承JPanel类
 	class DrawCanvas extends JPanel
 	{
+		private static final long serialVersionUID = 1L;
+
 		//重写JPanel的paint方法，实现绘画
 		public void paint(Graphics g)
 		{

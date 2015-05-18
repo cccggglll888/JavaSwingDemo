@@ -31,6 +31,8 @@ public class TestJToolBar
 	//创建"粘贴"Action，该Action用于创建菜单项、工具按钮和普通按钮
 	Action pasteAction = new AbstractAction("粘贴", new ImageIcon(getClass().getResource("/dog.jpg")))
 	{
+		private static final long serialVersionUID = 1L;
+
 		public void actionPerformed(ActionEvent e)
 		{
 			//如果剪贴板中包含stringFlavor内容
@@ -53,6 +55,8 @@ public class TestJToolBar
 	//创建"复制"Action
 	Action copyAction = new AbstractAction("复制", new ImageIcon(getClass().getResource("/dog.jpg")))
 	{
+		private static final long serialVersionUID = 1L;
+
 		public void actionPerformed(ActionEvent e)
 		{
 			StringSelection contents = new StringSelection(jta.getSelectedText());

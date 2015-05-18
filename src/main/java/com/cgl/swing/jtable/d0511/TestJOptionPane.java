@@ -187,6 +187,8 @@ public class TestJOptionPane
 //且Panel扩展类可以指定一个字符串作为TitledBorder
 class ButtonPanel extends JPanel
 {  
+	private static final long serialVersionUID = 1L;
+	
 	private ButtonGroup group;
 	public ButtonPanel(String title, String[] options)
 	{  

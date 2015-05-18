@@ -36,7 +36,7 @@ public class TestTableCellRenderer
 	public void init()
 	{
 		//以二维数组和一维数组来创建一个ExtendedTableModel对象
-		ExtendedTableModel model = new ExtendedTableModel(columnTitle , tableData);
+		ExtendedTableModel<Object> model = new ExtendedTableModel<Object>(columnTitle , tableData);
 		//以ExtendedTableModel来创建JTable
 		table = new JTable( model);
 		table.setRowSelectionAllowed(false);
@@ -60,6 +60,8 @@ public class TestTableCellRenderer
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		final JTable table = new JTable(4, 4) {
+			private static final long serialVersionUID = 1L;
+			
 			JCheckBox jb = new JCheckBox();
 			@Override
 			public TableCellEditor getCellEditor(int row, int column) {
@@ -89,7 +91,7 @@ public class TestTableCellRenderer
 	}
 }
 
-class ExtendedTableModel extends DefaultTableModel
+class ExtendedTableModel<T> extends DefaultTableModel
 {
 	private static final long serialVersionUID = 1L;
 	//重新提供一个构造器，该构造器的实现委托给DefaultTableModel父类
@@ -98,9 +100,9 @@ class ExtendedTableModel extends DefaultTableModel
 		super(cells , columnNames);
 	}
 	//重写getColumnClass方法，根据每列的第一个值来返回其真实的数据类型
-	public Class getColumnClass(int c) 
+	public Class<?> getColumnClass(int c) 
 	{
-		return getValueAt(0 , c).getClass();
+		return (Class<?>)getValueAt(0 , c).getClass();
 	}
 }
 

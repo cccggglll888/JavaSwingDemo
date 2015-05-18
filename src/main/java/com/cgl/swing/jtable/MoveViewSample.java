@@ -12,7 +12,6 @@ import javax.swing.ActionMap;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.InputMap;
-import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -29,6 +28,8 @@ public class MoveViewSample {
 	public static final int BLOCK = 1; // type
 
 	static class MoveAction extends AbstractAction {
+		private static final long serialVersionUID = 1L;
+		
 		JViewport viewport;
 		int direction;
 		int axis;

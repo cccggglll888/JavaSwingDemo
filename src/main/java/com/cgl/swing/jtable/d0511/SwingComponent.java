@@ -45,9 +45,9 @@ public class SwingComponent
 	JCheckBox married = new JCheckBox("是否已婚？" , false);
 	String[] colors = new String[]{"红色" , "绿色"  , "蓝色"};
 	//定义一个下拉选择框
-	JComboBox colorChooser = new JComboBox(colors);
+	JComboBox<String> colorChooser = new JComboBox<String>(colors);
 	//定义一个列表选择框
-	JList colorList = new JList(colors);
+	JList<String> colorList = new JList<String>(colors);
 	//定义一个8行、20列的多行文本域
 	JTextArea ta = new JTextArea(8, 20);
 	//定义一个40列的单行文本域
