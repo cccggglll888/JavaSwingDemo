@@ -1,4 +1,12 @@
 /target/
+*.class
+
+# eclipse配置文件 #
 /.settings/
 *.project
 *.classpath
+
+# Package Files #
+*.jar
+*.war
+*.ear
