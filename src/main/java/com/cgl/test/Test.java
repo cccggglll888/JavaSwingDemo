@@ -1,5 +1,5 @@
 package com.cgl.test;
 
 public class Test {
-	public String b = "bbbbbb";
+	public String a = "aaaaaa";
 }
