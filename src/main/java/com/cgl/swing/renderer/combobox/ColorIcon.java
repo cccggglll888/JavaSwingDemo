@@ -37,7 +37,13 @@ public class ColorIcon implements Icon {
 		return BOX;
 	}
 	public static String getColorName(Color c) {
-		
+		if (c.equals(Color.red)) {
+			return "红色";
+		} else if (c.equals(Color.blue)) {
+			return "蓝色";
+		} else if (c.equals(Color.yellow)) {
+			return "黄色";
+		}
 		return "颜色";
 	}
 	
