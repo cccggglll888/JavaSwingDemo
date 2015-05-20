@@ -1,0 +1,5 @@
+GridBagModel：抽象模型接口。该接口用于描述表格中单元格的合并状态。
+DefaultGridBagTableModel：GridBagModel的默认实现。
+
+GridBagTable：继承自JTable的控制器。通过该类中的方法控制表格单元的合并和拆分。
+GridBagTableUI：GridBagTable对应的UI。
