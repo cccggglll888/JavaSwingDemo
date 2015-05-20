@@ -6,11 +6,17 @@ import java.awt.Point;
  * 抽象模型接口。该接口用于描述表格中单元格的合并状态。
  */
 public interface GridBagModel {
-	// 格子处于正常状态
+	/**
+	 *  格子处于正常状态
+	 */
 	int DEFAULT = 0;
-	// 格子合并了其他的格子
+	/**
+	 *  格子合并了其他的格子
+	 */
 	int MERGE = 1;
-	// 格子被其他格子合并
+	/**
+	 *  格子被其他格子合并
+	 */
 	int COVERED = -1;
 
 	/**

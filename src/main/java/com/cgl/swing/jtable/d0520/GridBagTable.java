@@ -38,7 +38,7 @@ public class GridBagTable extends JTable {
 		gridBagModel = new DefaultGridBagTableModel(dm);
 		getColumnModel().setColumnSelectionAllowed(true);
 	}
-
+	
 	private void updateSubComponentUI(Object componentShell) {
 		if (componentShell == null) {
 			return;

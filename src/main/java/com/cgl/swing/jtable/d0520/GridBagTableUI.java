@@ -33,7 +33,7 @@ public class GridBagTableUI extends BasicTableUI {
 		}
 		return createTableSize(width);
 	}
-
+	
 	private Dimension createTableSize(long width) {
 		int height = 0;
 		int rowCount = table.getRowCount();
