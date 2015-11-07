@@ -24,6 +24,7 @@ import sun.swing.table.DefaultTableCellHeaderRenderer;
  * @author Administrator
  *
  */
+@SuppressWarnings("restriction")
 public class CLTreeTable extends JTable {
 	private static final long serialVersionUID = 1L;
 	

@@ -26,6 +26,7 @@ import com.sun.imageio.plugins.gif.GIFImageMetadata;
  * @author Administrator
  *
  */
+@SuppressWarnings("restriction")
 public class Gif extends JComponent {
 	private static final long serialVersionUID = 1L;
 	
@@ -59,7 +60,7 @@ public class Gif extends JComponent {
         return tempIndex;
     }
 
-    public Gif(File gifFile, int delayFactor) {
+	public Gif(File gifFile, int delayFactor) {
         this.delayFactor = delayFactor;
         try {
             ImageInputStream imageIn = ImageIO.createImageInputStream(gifFile);
